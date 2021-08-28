@@ -157,6 +157,8 @@ AUDIO_DLKM += audio_wcd934x.ko
 PRODUCT_PACKAGES += $(AUDIO_DLKM)
 endif
 
+endif
+
 ifneq ($(strip $(TARGET_USES_RRO)), true)
 #Audio Specific device overlays
 DEVICE_PACKAGE_OVERLAYS += vendor/qcom/opensource/audio-hal/primary-hal/configs/common/overlay

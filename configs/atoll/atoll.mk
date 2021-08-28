@@ -170,6 +170,8 @@ AUDIO_DLKM += audio_snd_event.ko
 PRODUCT_PACKAGES += $(AUDIO_DLKM)
 endif
 
+endif
+
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/audio-hal/primary-hal/configs/atoll/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
     vendor/qcom/opensource/audio-hal/primary-hal/configs/atoll/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
